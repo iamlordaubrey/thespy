@@ -15,4 +15,5 @@ class ThespyItem(scrapy.Item):
     images = scrapy.Field()
     title = scrapy.Field()
     starring = scrapy.Field()
+    synopsis = scrapy.Field()
     show_times = scrapy.Field()

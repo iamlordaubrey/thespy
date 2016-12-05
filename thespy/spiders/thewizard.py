@@ -1,6 +1,8 @@
 from scrapy import Spider
 from itertools import chain
 
+from thespy.items import ThespyItem
+
 
 def extract_synopsis(current_movie, paragraph_num):
     """
@@ -72,7 +74,6 @@ class OzSpy(Spider):
 
             # Movie Starring
             l_starring = movie.xpath('p/strong/text()').extract()
-            print('l_starring', l_starring, 'l_starring')
             r_starring = movie.xpath('p/strong[2]/following-sibling::text()[1]').extract()
 
             if l_starring and r_starring:

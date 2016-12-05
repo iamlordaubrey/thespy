@@ -13,6 +13,9 @@ BOT_NAME = 'thespy'
 
 SPIDER_MODULES = ['thespy.spiders']
 NEWSPIDER_MODULE = 'thespy.spiders'
+ITEM_PIPELINES = {
+    'scrapy.pipelines.images.ImagesPipeline': 100,
+}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
