@@ -44,3 +44,5 @@ def format_synopsis(synopsis_list):
     )
 
 
+class OzSpy(Spider):
+    pass
