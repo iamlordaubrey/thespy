@@ -1,5 +1,3 @@
-import scrapy
-
 from scrapy import Spider
 from itertools import chain
 
